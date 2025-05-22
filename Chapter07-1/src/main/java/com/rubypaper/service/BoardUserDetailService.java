@@ -28,7 +28,7 @@ public class BoardUserDetailService implements UserDetailsService {
 		} else {
 			Member member = optional.get();
 			return new SecurityUser(member); //User정보를 추가적으로 저장하고 싶을때 사용
-//			return new User(member);	// 추가적으로 저장할게 없다면 바로 User 사용가능
+//			return new User(member);	// 로그인 유무 정보만 필요하다면 User만 사용해도 됨(ㅈㅣ금 코드도 ㅇㅇ)
 		}
 	}
 
